@@ -1,6 +1,6 @@
 CREATE OR REPLACE PROCEDURE PR_AGREGAR_PRODUCTO(pk_id_inventario IN INVENTARIO.K_ID%TYPE,
 						   					   	pv_cantidad IN DETALLE_PEDIDO.V_CANTIDAD%TYPE,
-						   					   	pk_id_pedido IN PEDIDO.K_N_FACTURA%TYPE)
+						   					   	pk_id_pedido IN PEDIDO.K_N_FACTURAS%TYPE)
 AS
 	PRODUCTO_AGOTADO EXCEPTION;
 	lv_disponibilidad INVENTARIO.V_DISPONIBILIDAD%TYPE;
